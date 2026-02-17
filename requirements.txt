@@ -6,7 +6,7 @@ passlib[bcrypt]==1.7.4
 python-jose[cryptography]==3.3.0
 pyjwt==2.11.0
 cryptography==46.0.5
-pydantic==2.10.3
+pydantic==2.11.7
 pydantic-settings==2.6.1
 webpush==1.0.6
 requests==2.32.3
