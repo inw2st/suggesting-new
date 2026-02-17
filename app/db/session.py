@@ -19,6 +19,9 @@ if database_url.startswith("postgresql://") and not database_url.startswith("pos
 connect_args = {}
 if database_url.startswith("sqlite"):
     connect_args = {"check_same_thread": False}
+elif database_url.startswith("postgresql"):
+    # Supabase requires SSL
+    connect_args = {"ssl": True}
 
 engine = create_engine(
     database_url,
